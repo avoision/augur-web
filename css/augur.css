@@ -1,0 +1,178 @@
+/*======================================================*/
+/*  Structural
+/*======================================================*/
+@font-face {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+	background-color: #000;
+	color: #b1b0b0;	
+  	font-family: Comfortaa, Helvetica, Verdana, Sans-Serif;
+  	font-size: 100%;
+}
+
+p { font-size: 1.1em; line-height: 1.37em;}
+
+h2 {
+	font-size: 1.56em;
+	color: #33ccff;
+}
+
+.augurWrap {
+  	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto 30px auto;
+
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.logo {
+	height: 40px;
+}
+
+.logo img { display: none;}
+
+
+.tagline {
+	color: #888;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+	text-align: center;
+
+}
+
+/*======================================================*/
+/*  iPhone
+/*======================================================*/
+.iPhone { 
+	text-align: center;
+	width: 100%;
+}
+.case {
+/*	width: 900px;*/
+	margin: 0 auto;
+	position: relative;
+}
+
+.case img {
+	max-width: 100%;
+}
+
+.info {
+	position: absolute;
+	z-index: 100;
+	left: 50%;	
+	margin-left: -30.55555555%;
+	margin-top: 7.050505050%;
+	max-width: 3%;
+}
+
+.screen {
+	position: absolute;
+	z-index: 50;
+	left: 50%;
+	margin-left: -25%;
+	margin-top: 4%;
+	cursor: pointer;
+	max-width: 54.503991%;
+}
+
+
+/*======================================================*/
+/*  Download
+/*======================================================*/
+.downloadBtn {
+	text-align: center;
+	margin: 5% 0 3% 0;
+}
+
+
+/*======================================================*/
+/*  Details
+/*======================================================*/
+.colLeft, 
+.colRight { width: 40%;}
+
+.colLeft { float: left; margin-left: 7%; }
+.colRight { float: right; margin-right: 7%; }
+
+
+/*======================================================*/
+/*  Bio
+/*======================================================*/
+.bio { color: #666; margin: 0 7%; }
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #33ccff;
+}
+
+a:hover {
+	text-decoration: underline;
+	opacity: 0.7;
+}
+
+
+/*======================================================*/
+  Responsive
+/*======================================================
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {  
+	.augurWrap { width: 95%; }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+/*@media (min-width:481px) and (max-width:640px) {  */
+
+@media (min-width:320px) and (max-width:800px) {  	
+	.augurWrap { width: 95%; }
+
+	.device, 
+	.info, 
+	.tagline { display: none; }
+
+	.screen { 
+		position: relative;
+		width: 478px;
+		max-width: 478px;
+		height: 150px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		margin-bottom: 20px;
+		overflow: hidden;
+		left: 0%;
+		max-width: 100%;
+	}
+
+	.screen img {
+		margin-top: -20.455153%;
+		max-width: 100%;
+	}
+
+	.downloadBtn { margin-bottom: 35px;}
+
+	.colLeft, 
+	.colRight {
+		float: left;
+		width: 90%;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
+}
